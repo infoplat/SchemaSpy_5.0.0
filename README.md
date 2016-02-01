@@ -9,10 +9,11 @@ SchemaSpy是Java开发的的工具（要求java 5或更高版本的支持），�
 ##调试方法
 
 - 执行Java类：net.sourceforge.schemaspy.Main
-- 命令行参数：-charset UTF-8 -t mysql -cp lib\mysql-connector.jar -db mysql  -host localhost -port 3306 -u root -p 123456 -o mysql -s mysql  -i "(talbe1|view2)" -noviews -nologo -noads -hq 
+- 命令行参数：-charset UTF-8 -t mysql -cp lib\mysql-connector.jar -db mysql  -host localhost -port 3306 -u root -p 123456 -o mysql -s mysql  -i "(table1|view2)" -noviews -nologo -noads -hq 
 
 ## 命令行参数详细说明
-- [-noviews]：表示导出视图，加上次参数后， 所有的视图将被忽略
+- [-i "(table1|view2)"]：表示指定表名或视图名，只有指定的表或视图才会被处理。
+- [-noviews]：表示部导出视图，加上此参数后，所有的视图将被忽略。
 
 ##源码目录说明
     ├─doc
