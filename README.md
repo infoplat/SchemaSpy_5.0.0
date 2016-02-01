@@ -10,6 +10,8 @@ SchemaSpy是Java开发的的工具（要求java 5或更高版本的支持），�
 
 - 执行：net.sourceforge.schemaspy.Main
 - 参数：-charset UTF-8 -t mysql -cp lib\mysql-connector.jar -db mysql  -host localhost -port 3306 -u root -p 123456 -o mysql -s mysql  -nologo -noads -hq
+ -ss
+ -ssa
 
 ##源码目录说明
     ├─doc
