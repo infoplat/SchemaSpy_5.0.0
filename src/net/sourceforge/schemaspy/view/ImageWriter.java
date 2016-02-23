@@ -35,8 +35,18 @@ public class ImageWriter extends ResourceWriter {
     public void writeImages(File outputDir) throws IOException {
         new File(outputDir, "images").mkdir();
 
-        writeResource("/images/tabLeft.gif", new File(outputDir, "/images/tabLeft.gif"));
-        writeResource("/images/tabRight.gif", new File(outputDir, "/images/tabRight.gif"));
-        writeResource("/images/background.gif", new File(outputDir, "/images/background.gif"));
+//        writeResource("/images/tabLeft.gif", new File(outputDir, "/images/tabLeft.gif"));
+//        writeResource("/images/tabRight.gif", new File(outputDir, "/images/tabRight.gif"));
+//        writeResource("/images/background.gif", new File(outputDir, "/images/background.gif"));
+
+        String[] images = {
+        		"tabLeft.gif",
+        		"tabRight.gif",
+        		"background.gif",
+        		"sflogo.png"};
+        for (String imageName : images) {
+        	String fullImage = String.format("/images/%s", imageName);
+        	writeResource(fullImage, new File(outputDir, fullImage));
+		}
     }
 }

@@ -182,7 +182,8 @@ public class HtmlFormatter {
         out.writeln("  <tr>");
         out.writeln("   <td class='dataTable' valign='bottom'>Legend:</td>");
         if (sourceForgeLogoEnabled())
-            out.writeln("   <td class='container' align='right' valign='top'><a href='http://sourceforge.net' target='_blank'><img src='http://sourceforge.net/sflogo.php?group_id=137197&amp;type=1' alt='SourceForge.net' border='0' height='31' width='88'></a></td>");
+//            out.writeln("   <td class='container' align='right' valign='top'><a href='http://sourceforge.net' target='_blank'><img src='http://sourceforge.net/sflogo.php?group_id=137197&amp;type=1' alt='SourceForge.net' border='0' height='31' width='88'></a></td>");
+            out.writeln("   <td class='container' align='right' valign='top'><a href='http://sourceforge.net' target='_blank'><img src='images/sflogo.png' alt='SourceForge.net' border='0' height='31' width='88'></a></td>");
         out.writeln("  </tr>");
         out.writeln("  <tr><td class='container' colspan='2'>");
         out.writeln("   <table class='dataTable' border='1'>");
